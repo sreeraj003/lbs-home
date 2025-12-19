@@ -306,7 +306,7 @@ function Hero() {
                     {/* Overlay */}
                     <div
                       className="absolute  p-2 w-full bg-black/60
-                  sm:opacity-0 opacity-100 group-hover:opacity-100
+                  lg:opacity-0 opacity-100 group-hover:opacity-100
                  transition-opacity duration-300
                  flex flex-col items-center h-16 bottom-0 justify-center text-white"
                     >
