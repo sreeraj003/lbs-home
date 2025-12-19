@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=SUSE:wght@100..800&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
-
 @custom-variant dark (&:is(.dark *));
+
+* {
+  font-family: "Geist", sans-serif;
+}
 
 :root {
   /* Updated color theme to peach with professional neutrals */
