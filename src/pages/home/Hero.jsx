@@ -85,7 +85,7 @@ function Hero() {
         </div>
         <div
           id="about"
-          className="w-full px-5 mt-15 sm:p-15 text-sm sm:text-lg bg-[#f8f3f2] min-h-[300px] text-center font-bold items-center flex flex-col justify-center"
+          className="w-full px-5  sm:p-15 text-sm sm:text-lg bg-[#f8f3f2] min-h-[300px] text-center font-bold items-center flex flex-col justify-center"
         >
           <h1 className="text-2xl sm:text-4xl  ">
             Uniting Alumni, Building Futures
@@ -278,43 +278,45 @@ function Hero() {
             )}
           </div>
         </div>
-        <div
-          id="leaders"
-          className="flex px-5 sm:px-15 max-w-[1400px] mx-auto justify-center items-center flex-col mt-15"
-        >
-          <h2 className="text-4xl text-center sm:text-5xl font-bold text-foreground mb-4 text-balance">
-            Meet Our <span className="text-[#e4744b]">Leadership </span> Panel
-          </h2>
-          <p className=" max-w-[900px] text-gray-500 text-center font-normal">
-            Dedicated personals guiding our alumni association with passion and
-            expertise
-          </p>
+        <div className="bg-[#f8f3f2] py-15">
           <div
-            className="w-full mb-15 mt-10 grid md:grid-cols-2 place-items-center
-              grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+            id="leaders"
+            className="flex px-5 sm:px-15 max-w-[1400px] mx-auto justify-center items-center flex-col"
           >
-            {leaders?.map((el, ind) => (
-              <div>
-                <div
-                  key={ind}
-                  style={{ backgroundImage: `url(/${el?.img})` }}
-                  className="group  relative rounded-md bg-center bg-no-repeat bg-cover
+            <h2 className="text-4xl text-center sm:text-5xl font-bold text-foreground mb-4 text-balance">
+              Meet Our <span className="text-[#e4744b]">Leadership </span> Panel
+            </h2>
+            <p className=" max-w-[900px] text-gray-500 text-center font-normal">
+              Dedicated personals guiding our alumni association with passion
+              and expertise
+            </p>
+            <div
+              className="w-full mb-15 mt-10 grid md:grid-cols-2 place-items-center
+              grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+            >
+              {leaders?.map((el, ind) => (
+                <div>
+                  <div
+                    key={ind}
+                    style={{ backgroundImage: `url(/${el?.img})` }}
+                    className="group  relative rounded-md bg-center bg-no-repeat bg-cover
                sm:w-62 w-36  h-36 sm:h-68 border border-border overflow-hidden
                transition-transform duration-300 ease-out "
-                >
-                  {/* Overlay */}
-                  <div
-                    className="absolute w-full bg-black/60
+                  >
+                    {/* Overlay */}
+                    <div
+                      className="absolute w-full bg-black/60
                   sm:opacity-0 opacity-100 group-hover:opacity-100
                  transition-opacity duration-300
                  flex flex-col items-center h-16 bottom-0 justify-center text-white"
-                  >
-                    <div className="text-lg font-semibold">{el?.name}</div>
-                    <div className="text-sm">{el?.position}</div>
+                    >
+                      <div className="text-lg font-semibold">{el?.name}</div>
+                      <div className="text-sm">{el?.position}</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
         <section
