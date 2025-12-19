@@ -1,5 +1,5 @@
-import banner from "@/assets/images/aboutUs.jpg";
-import { useCallback, useEffect, useState } from "react";
+import banner from "@/assets/images/aboutus.jpg";
+import { useEffect, useState } from "react";
 
 import {
   Calendar,
@@ -319,7 +319,7 @@ function Hero() {
         </div>
         <section
           id="contact"
-          className="py-20 bg-gradient-to-b from-background to-muted/20"
+          className="py-20 bg-linear-to-b from-background to-muted/20"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-in">
