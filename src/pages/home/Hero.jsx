@@ -300,12 +300,12 @@ function Hero() {
                     key={ind}
                     style={{ backgroundImage: `url(/${el?.img})` }}
                     className="group  relative rounded-md bg-center bg-no-repeat bg-cover
-               sm:w-62 w-36  h-36 sm:h-68 border border-border overflow-hidden
+               sm:w-62 w-40  h-44 sm:h-68 border border-border overflow-hidden
                transition-transform duration-300 ease-out "
                   >
                     {/* Overlay */}
                     <div
-                      className="absolute w-full bg-black/60
+                      className="absolute  p-2 w-full bg-black/60
                   sm:opacity-0 opacity-100 group-hover:opacity-100
                  transition-opacity duration-300
                  flex flex-col items-center h-16 bottom-0 justify-center text-white"

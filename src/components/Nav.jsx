@@ -46,9 +46,12 @@ export default function Navigation() {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <button className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium">
+            <a
+              href="#contact"
+              className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium"
+            >
               Join Now
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -62,34 +65,43 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pb-4 space-y-2 animate-slide-up">
-            <Link
-              href="#announcements"
+          <div className="md:hidden flex justify-center items-center flex-col pb-4 space-y-2 animate-slide-up">
+            <a
+              href="#about"
+              onClick={() => setIsOpen(false)}
               className="block px-4 py-2 text-foreground hover:bg-secondary rounded-lg transition-colors"
             >
-              Announcements
-            </Link>
-            <Link
-              href="#membership"
-              className="block px-4 py-2 text-foreground hover:bg-secondary rounded-lg transition-colors"
-            >
-              Membership
-            </Link>
-            <Link
-              href="#"
+              About
+            </a>
+            <a
+              onClick={() => setIsOpen(false)}
+              href="#events"
               className="block px-4 py-2 text-foreground hover:bg-secondary rounded-lg transition-colors"
             >
               Events
-            </Link>
-            <Link
-              href="#"
+            </a>
+            <a
+              onClick={() => setIsOpen(false)}
+              href="#leaders"
+              className="block px-4 py-2 text-foreground hover:bg-secondary rounded-lg transition-colors"
+            >
+              Leaders
+            </a>
+            <a
+              onClick={() => setIsOpen(false)}
+              href="#contact"
               className="block px-4 py-2 text-foreground hover:bg-secondary rounded-lg transition-colors"
             >
               Contact
-            </Link>
-            <button className="w-full mt-4 px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:shadow-lg transition-all font-medium">
+            </a>
+
+            <a
+              onClick={() => setIsOpen(false)}
+              href="#contact"
+              className=" mt-4 px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:shadow-lg transition-all font-medium"
+            >
               Join Now
-            </button>
+            </a>
           </div>
         )}
       </div>
